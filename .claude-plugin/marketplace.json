@@ -1,0 +1,15 @@
+{
+  "name": "aeogeo",
+  "description": "The aeogeo plugin: deterministic AEO/GEO checks and a source-cited rulebook for AI search, for your agent.",
+  "owner": {
+    "name": "aeogeo",
+    "url": "https://aeogeo.site"
+  },
+  "plugins": [
+    {
+      "name": "aeogeo",
+      "source": "./",
+      "description": "Deterministic AEO/GEO checks and a source-cited rulebook for AI search, for your agent."
+    }
+  ]
+}

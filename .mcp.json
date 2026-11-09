@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "aeogeo": {
+      "type": "http",
+      "url": "https://mcp.aeogeo.site"
+    }
+  }
+}

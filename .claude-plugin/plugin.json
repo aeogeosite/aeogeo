@@ -1,0 +1,23 @@
+{
+  "name": "aeogeo",
+  "version": "0.1.0",
+  "description": "Deterministic AEO/GEO checks and a source-cited rulebook for AI search, for your agent.",
+  "author": {
+    "name": "aeogeo",
+    "url": "https://aeogeo.site"
+  },
+  "homepage": "https://aeogeo.site/docs/mcp/",
+  "repository": "https://github.com/aeogeosite/aeogeo",
+  "license": "MIT",
+  "privacyPolicyUrl": "https://aeogeo.site/privacy/",
+  "icon": "./.claude-plugin/icon.png",
+  "keywords": [
+    "aeo",
+    "geo",
+    "ai-search",
+    "seo",
+    "mcp",
+    "llms-txt",
+    "schema"
+  ]
+}
