@@ -20,6 +20,8 @@ Documentation: https://aeogeo.site/docs/mcp/
 
 **Any MCP client:** add the server `https://mcp.aeogeo.site` (Streamable HTTP). Free tools need no key or sign-in. For Pro tools, send `Authorization: Bearer <your key>` to that address, or connect `https://mcp.aeogeo.site/mcp`, which signs you in with OAuth (Claude Desktop and other clients that add remote servers as connectors). Setup per client: https://aeogeo.site/docs/mcp/
 
+**Cline:** see [llms-install.md](llms-install.md) (one settings entry; set `"type": "streamableHttp"`).
+
 **Skills only** (clients that read `SKILL.md`, such as Claude Code, Cursor or Codex): copy the folders in `skills/` into the client's skills directory.
 
 ## Free and Pro

@@ -1,10 +1,6 @@
 ---
 name: aeogeo-audit
-description: >
-  Audit pages and content for AEO/GEO using current aeogeo MCP guidance,
-  mechanical checks, and independent agent semantic evaluation. Use for
-  website AI-search readiness reviews, code/HTML content audits, and
-  evidence-aware optimization recommendations.
+description: Audit pages and content for AEO/GEO using current aeogeo MCP guidance, mechanical checks, and independent agent semantic evaluation. Use for website AI-search readiness reviews, code/HTML content audits, and evidence-aware optimization recommendations.
 ---
 
 # aeogeo Audit

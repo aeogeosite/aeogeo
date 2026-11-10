@@ -1,9 +1,6 @@
 ---
 name: aeogeo-research
-description: >
-  Answer questions about current AEO/GEO research, changing AI-search
-  recommendations, evidence conflicts, source provenance, or recent
-  platform behavior by retrieving the living aeogeo MCP rulebook and insights.
+description: Answer questions about current AEO/GEO research, changing AI-search recommendations, evidence conflicts, source provenance, or recent platform behavior by retrieving the living aeogeo MCP rulebook and insights.
 ---
 
 # aeogeo Research

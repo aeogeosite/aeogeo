@@ -1,9 +1,6 @@
 ---
 name: aeogeo-optimize
-description: >
-  Implement scoped AEO/GEO improvements in a website or content repository
-  using aeogeo's current evidence, contextual agent judgment, deterministic
-  checks, and existing project tests. Use when the user asks to change code.
+description: Implement scoped AEO/GEO improvements in a website or content repository using aeogeo's current evidence, contextual agent judgment, deterministic checks, and existing project tests. Use when the user asks to change code.
 ---
 
 # aeogeo Optimize
