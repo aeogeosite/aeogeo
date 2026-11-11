@@ -1,5 +1,7 @@
 # aeogeo plugin
 
+[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/aeogeosite/aeogeo)
+
 Deterministic AEO/GEO checks and a source-cited rulebook for AI search, for the agent you already use. One MCP server plus three skills:
 
 - **aeogeo-audit:** review a page or its HTML for AI-search readiness. The checks are deterministic; your agent judges meaning and context.
