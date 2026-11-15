@@ -7,6 +7,21 @@ description: Audit pages and content for AEO/GEO using current aeogeo MCP guidan
 
 You are the **semantic evaluator**. aeogeo MCP provides current, curated guidance and deterministic verification. Don't outsource truth, originality or contextual applicability to scanner grades.
 
+## The six levels
+
+The rulebook sorts every rule into six readiness levels. An audit covers all six. Work through them in order: a fault at a lower level comes before anything above it, so a blocked crawler outranks any off-site work.
+
+| Level | What it covers | Who judges it |
+|---|---|---|
+| L0 access | crawlers can reach the page | automated checks |
+| L1 rendering | the content is in the HTML without JavaScript | automated checks |
+| L2 structure | headings, structured data, page template | automated checks, plus you where a rule has no check |
+| L3 answer shape | the page answers its question plainly and early | automated checks, plus you where a rule has no check |
+| L4 authority | who stands behind the page, their expertise, entity facts that match everywhere, local details | you: `fetch_rules` with `author_expertise`, `authority_offsite`, and `local` for a local business |
+| L5 off-site | third-party mentions, reviews, listings and press, and how the user measures results | you: `fetch_rules` with `authority_offsite` and `measurement`, plus your own web tools for the off-site facts |
+
+A scan covers only the automated part of L0–L3. No automated check covers L4 or L5. If you stop at the scan, say that L4 and L5 were not judged. On the free tier, `fetch_sample_rules` gives public summaries of the same categories.
+
 ## Runbook
 
 1. Identify the user's target, business purpose, content type, audience and read-only/edit intent.
@@ -14,7 +29,8 @@ You are the **semantic evaluator**. aeogeo MCP provides current, curated guidanc
 3. Run the applicable deterministic path: `scan_url` for a live page, `lint_html` for supplied HTML, `lint_text` only for text properties, or `audit_schema` for JSON-LD. Don't claim HTML headers/robots findings from plain text.
 4. Independently assess whether content actually answers its intended query, is accurate and useful, makes supported claims, uses credible sources, and meets the user's context. Look for invented numbers, credentials, studies and review counts.
 5. Triage check results. Challenge false positives (e.g., numeric BLUF demand on a correct nonnumeric answer, reference-doc repetition, optional schema treated as mandatory). Explain skipped/unknown checks.
-6. Report separately: **verified technical defects**, **agent semantic findings**, **evidence-based recommendations**, **uncertain experiments**. Include applicable rule IDs, confidence, version and re-check suggestions.
+6. Judge L4 authority and L5 off-site against their rules (see the six levels above), checking off-site facts with your own web tools. Do this even when every check passes.
+7. Report level by level from L0, and within that separately: **verified technical defects**, **agent semantic findings** (all of L4 and L5), **evidence-based recommendations**, **uncertain experiments**. Include applicable rule IDs, confidence, version and re-check suggestions. Name any level you did not judge.
 
 ## Stop rules
 
