@@ -1,6 +1,6 @@
 # aeogeo plugin
 
-[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/aeogeosite/aeogeo)
+[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/aeogeosite/aeogeo) [![aeogeo MCP on mcprush](https://mcprush.com/badge/aeogeo-mcp/score.svg)](https://mcprush.com/to/aeogeo-mcp?ref=badge)
 
 Deterministic AEO/GEO checks and a source-cited rulebook for AI search, for the agent you already use. One MCP server plus three skills:
 

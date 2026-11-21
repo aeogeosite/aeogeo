@@ -26,7 +26,7 @@ A scan covers only the automated part of L0–L3. No automated check covers L4 o
 
 1. Identify the user's target, business purpose, content type, audience and read-only/edit intent.
 2. Discover **relevant current guidance** via `search_rules`/`fetch_rules`/`get_insights` (and `list_categories` when useful), even if initial scanner findings are all green. Bound lookups to relevant subjects; don't fetch the entire rulebook.
-3. Run the applicable deterministic path: `scan_url` for a live page, `lint_html` for supplied HTML, `lint_text` only for text properties, or `audit_schema` for JSON-LD. Don't claim HTML headers/robots findings from plain text.
+3. Run the applicable deterministic path: `scan_url` for a live page, `lint_html` for supplied HTML, `lint_text` only for text properties, or `audit_schema` for JSON-LD. Don't claim HTML headers/robots findings from plain text. For a whole site (Pro): `scan_site`, then `get_site_scan` with `view: "by_check"` once it is done, which lists each failing check once with its page count and `rule_id`; fetch those rules with `fetch_rules` and `ids`.
 4. Independently assess whether content actually answers its intended query, is accurate and useful, makes supported claims, uses credible sources, and meets the user's context. Look for invented numbers, credentials, studies and review counts.
 5. Triage check results. Challenge false positives (e.g., numeric BLUF demand on a correct nonnumeric answer, reference-doc repetition, optional schema treated as mandatory). Explain skipped/unknown checks.
 6. Judge L4 authority and L5 off-site against their rules (see the six levels above), checking off-site facts with your own web tools. Do this even when every check passes.
