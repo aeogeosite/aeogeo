@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "aeogeo",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Deterministic AEO/GEO checks and a source-cited rulebook for AI search, for your agent.",
   "author": {
     "name": "aeogeo",
